@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component} from 'react';
 import '../css/bootstrap.min.css'
 import '../css/style.css'
 
 export default class ChatBox extends React.Component {
   render() {
     return (
-    <div className="centerContainer flexRowSpaceBetween">
+
       <div className="flexColumn box" style={{borderRight: '1px solid'}}>
         <div>
           <img className="chat-profile" src={require("../assets/buddy-profile.png")} alt="Profile image" />
@@ -18,7 +18,7 @@ export default class ChatBox extends React.Component {
           <div className="type-box-green"></div>
         </div>
       </div>
-    </div>
+    
     )
   }
 }
