@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { Route, Link, BrowserRouter as Router, Switch} from 'react-router-dom'
 import App from './components/App/App';
+import BuddyPage from './components/BuddyPage';
 import * as serviceWorker from './serviceWorker';
+
+// const routing = (
+//     <Router>
+//         <div>
+
+//         </div>
+//     </Router>
+// )
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<App />, document.getElementById('root'));

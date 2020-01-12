@@ -1,6 +1,6 @@
 import React from 'react';
-import './css/bootstrap.min.css'
-import './css/style.css'
+import '../css/bootstrap.min.css'
+import '../css/style.css'
 
 export default class ChatBox extends React.Component {
   render() {
@@ -8,7 +8,7 @@ export default class ChatBox extends React.Component {
     <div className="centerContainer flexRowSpaceBetween">
       <div className="flexColumn box" style={{borderRight: '1px solid'}}>
         <div>
-          <img className="chat-profile" src={require("./assets/buddy-profile.png")} alt="Profile image" />
+          <img className="chat-profile" src={require("../assets/buddy-profile.png")} alt="Profile image" />
           <h4 className="duration">User 1<br />online for: 00:03:00</h4>
         </div>
         <div className="centerContainer flexRowSpaceBetween table">
