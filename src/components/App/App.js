@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import Form from '../Form/Form.js';
 import '../../css/bootstrap.min.css'
 import '../../css/style.css'
@@ -68,7 +68,7 @@ class App extends React.Component {
 
 export default App;
 
-{/* <div className="app">
+/* <div className="app">
 <div className="app__header">
   <img src={logo} className="app__logo" alt="logo" />
   { !this.state.user ? (
@@ -90,4 +90,4 @@ export default App;
 <div className="app__list">
   <Form user={this.state.user} />
 </div>
-</div> */}
+</div> */
