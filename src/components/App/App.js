@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import Form from '../Form/Form.js';
 import '../../css/bootstrap.min.css'
 import '../../css/style.css'
-import firebase from 'firebase';
-import firebaseConfig from '../../config';
-firebase.initializeApp(firebaseConfig);
+// import firebase from 'firebase';
+// import firebaseConfig from '../../config';
+// firebase.initializeApp(firebaseConfig);
 
 class App extends React.Component {
   constructor(props) {
@@ -13,22 +13,22 @@ class App extends React.Component {
       user: null,
     }
   }
-  componentDidMount() {
-    // firebase.auth().onAuthStateChanged(user => {
-    //   this.setState({ user });
-    // });
-    firebase.auth().signInAnonymously().catch(function(error) {
-      // var errorCode = error.code;
-      // var errorMessage = error.message;
-    });
-  }
-  handleSignIn() {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithPopup(provider);
-  }
-  handleLogOut() {
-    firebase.auth().signOut();
-  }
+  // componentDidMount() {
+  //   // firebase.auth().onAuthStateChanged(user => {
+  //   //   this.setState({ user });
+  //   // });
+  //   firebase.auth().signInAnonymously().catch(function(error) {
+  //     // var errorCode = error.code;
+  //     // var errorMessage = error.message;
+  //   });
+  // }
+  // handleSignIn() {
+  //   const provider = new firebase.auth.GoogleAuthProvider();
+  //   firebase.auth().signInWithPopup(provider);
+  // }
+  // handleLogOut() {
+  //   firebase.auth().signOut();
+  // }
   render() {
     return (
       <div className="heroImage">
@@ -50,7 +50,7 @@ class App extends React.Component {
 
 export default App;
 
-{/* <div className="app">
+/* <div className="app">
 <div className="app__header">
   <img src={logo} className="app__logo" alt="logo" />
   { !this.state.user ? (
@@ -72,4 +72,4 @@ export default App;
 <div className="app__list">
   <Form user={this.state.user} />
 </div>
-</div> */}
+</div> */
