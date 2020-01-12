@@ -4,7 +4,7 @@ import './App.css';
 import Form from '../Form/Form.js';
 import firebase from 'firebase';
 import firebaseConfig from '../../config';
-import Sidebar from '../Sidebar/Sidebar';
+import Sidebar from '../Sidebar';
 firebase.initializeApp(firebaseConfig);
 class App extends Component {
   constructor(props) {
